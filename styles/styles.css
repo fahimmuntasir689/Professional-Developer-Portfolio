@@ -1,0 +1,325 @@
+/* Common Styles */
+
+* {
+    font-family: "poppins";
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #FFF8F3;
+    background-image: url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/* navigation styles */
+
+.nav-title {
+    color: var(--Dark-01, #181818);
+    font-size: 45px;
+    font-weight: 800;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+nav .nav-part {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+
+nav span {
+    color: #FD6E0A;
+}
+
+
+
+/* Banner Section */
+
+header .banner-section {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 0px 180px;
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+
+}
+
+.banner-section h3 {
+    color: var(--Dark-02, #474747);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-section h1 {
+    color: var(--Dark-01, #181818);
+    font-size: 85px;
+    font-weight: 700;
+}
+
+/* Button Styles */
+
+.secondary-btn {
+    width: 160px;
+    height: 64px;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+    background: #FFF8F3;
+    color: #FD6E0A;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.btn-primary {
+    width: 150px;
+    height: 64px;
+    border-radius: 5px;
+    border-style: none;
+    background: #FD6E0A;
+    color: var(--White-Color, #FFF);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Main section */
+
+/* About section style */
+
+.about-section {
+    width: 1140px;
+    /* height: 400px; */
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin-top: 130px;
+    text-align: center;
+    padding: 100px 100px;
+}
+
+li {
+    list-style: none;
+}
+
+.common-title {
+    color: var(--Dark-01, #181818);
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+.about-section .info-part {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.about-section .info {
+    color: var(--Dark-02, #474747);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* what i do part styles */
+
+.what-i-do {
+
+    margin: 100px 250px;
+}
+
+.skill-set {
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.skill {
+    width: 267px;
+    height: 300px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    padding: 15px 15px;
+}
+
+.skill .skill-name {
+    color: var(--Dark-01, #181818);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+
+/* Resume section style */
+
+.resume-section {
+    display: flex;
+    margin: 0 150px;
+}
+
+.resume-section .resume-title {
+    color: var(--Dark-02, #474747);
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.resume-section .resume-info>h4 {
+    color: var(--Dark-02, #474747);
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.resume-info h5 {
+    color: #474747;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+.resume-info p {
+    color: var(--Dark-03, #757575);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 15px;
+}
+
+.resume-info hr {
+    width: 558px;
+    height: 1px;
+    margin-top: 15px;
+}
+
+/* Footer Part Styles */
+
+footer {
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 50px 10px;
+}
+
+footer .Last-part {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+footer img {
+
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+.contact>input[type="text"],
+.contact input[type="email"],
+textarea {
+
+    display: block;
+    margin-bottom: 10px;
+    padding: 18px 35px;
+    width: 100%;
+    border: 0px;
+}
+
+/* Responsive Part */
+@media screen and (max-width:576px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0px;
+    }
+
+    header {
+        padding: 20px 0px 0px 10px;
+    }
+
+    .banner-section img {
+        width: 100%;
+    }
+
+    header .banner-section {
+        background-image: none;
+        flex-direction: column;
+        padding: 10px 10px 0px 10px;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-part {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .about-section {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .about-section .info-part {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .what-i-do {
+        margin: 50px auto;
+        padding: 10px;
+    }
+
+    .skill-set {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-section {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .education-part{
+        padding: 20px;
+        width: 80%;
+    }
+    .message-part{
+        width: 50%;
+
+    }
+
+    .Last-part {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        margin: 0px;
+    }
+
+}
